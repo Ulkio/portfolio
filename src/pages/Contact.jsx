@@ -12,8 +12,7 @@ const Contact = () => {
           <div>
             <div className="mt-16 flex flex-row ">
               <div className="w-1/2">
-                <form action="https://formsubmit.co/fb0c943500258bf514d2dc631ab30ea8" method="POST" target="_blank">
-                  <input type="hidden" name="_next" value="https://ulkio.github.io/portfolio/"></input>
+              <form action="https://formspree.io/f/xknagzva" method="POST">
                   <div className="flex flex-col gap-16">
                     <input
                       className="bg-blue-palette-background border-b-4 border-yellow-palette focus:outline-none"
@@ -66,8 +65,7 @@ const Contact = () => {
           <div>
             <div className="mt-16">
               <div className="">
-                <form action="https://formsubmit.co/fb0c943500258bf514d2dc631ab30ea8" method="POST" target="_blank">
-                  <input type="hidden" name="_next" value="https://ulkio.github.io/portfolio/"></input>
+              <form action="https://formspree.io/f/xknagzva" method="POST">
                   <div className="flex flex-col gap-16">
                     <input
                       className="bg-blue-palette-background border-b-4 border-yellow-palette focus:outline-none"
