@@ -19,7 +19,7 @@ const Navbar = ({ visiblePage, selectedPage, setSelectedPage }) => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
 
   return (
-    <nav className=" z-40 w-screen fixed top-0 bg-blue-palette-navbar ">
+    <nav className=" z-40 w-screen fixed top-0 bg-blue-palette-navbar lg:px-16">
       <div className="font-opensans font-semibold h-16 flex flex-row justify-between px-8 items-center">
         {isAboveMediumScreens ? (
           <>
