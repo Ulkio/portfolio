@@ -1,32 +1,44 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import ReactPlayer from "react-player";
 const Projects = () => {
   const isAboveMediumScreens = useMediaQuery({ query: `(min-width:1024px)` });
 
   return (
-    <section id="projets" className="border-t-4 border-yellow-palette bg-blue-palette-background h-screen">
-      <div className="h-full flex flex-col justify-center items-center gap-8 lg:gap-32">
-        <p className="text-3xl lg:text-6xl text-yellow-palette">PROJETS</p>
-        <div className="flex flex-row gap-8 justify-center flex-wrap w-full px-6">
-          <motion.div
-            onClick={() => window.open("http://highvalyrianglyphs.onrender.com")}
-            className="relative hover:cursor-pointer">
-            {isAboveMediumScreens && (
-              <div className="p-8 absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500 bg-yellow-palette flex flex-col justify-between text-center  ">
-                <p className=" text-blue-palette-navbar text-lg font-semibold">High Valyrian Glyphs</p>
-                <p className=" text-blue-palette-navbar text-lg font-semibold">
-                  Apprendre les glyphes écrits par David J Peterson pour le langage créé pour Game of Thrones et House
-                  of the Dragon.
-                </p>
-                <p className=" text-blue-palette-navbar text-sm font-semibold">Créé avec la stack MERN + TailwindCSS</p>
-              </div>
-            )}
-            <img className="w-48 h-48 lg:w-80 lg:h-80 object-cover" src={`assets/projetHV.png`} />
-          </motion.div>
-        </div>
-      </div>
+    <section id="projets" className="border-t-4 border-yellow-palette bg-blue-palette-background h-screen lg:px-24">
+      <p className="text-3xl lg:text-6xl text-yellow-palette text-center pt-24">PROJETS</p>
+      <Swiper
+        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        slidesPerView={1}
+        navigation
+        pagination={{ clickable: true }}
+        className="py-12 ">
+        <SwiperSlide>
+          <div className="w-full lg:h-[600px] flex flex-col lg:flex-row justify-center items-center gap-8">
+            <ReactPlayer url="/assets/hv-desktop.mp4" controls muted loop width="100%" height="100%" />
+            <ReactPlayer url="/assets/hv-mobile.mp4" controls muted loop width="50%" height="100%" />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="w-full lg:h-[600px] flex flex-col lg:flex-row justify-center items-center gap-8">
+            <ReactPlayer url="/assets/spacex-desktop.mp4" controls muted loop width="100%" height="100%" />
+            <ReactPlayer url="/assets/spacex-mobile.mp4" controls muted loop width="50%" height="100%" />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="w-full lg:h-[600px] flex flex-col lg:flex-row justify-center items-center gap-8">
+            <ReactPlayer url="/assets/mystiik-desktop.mp4" controls muted loop width="100%" height="100%" />
+            <ReactPlayer url="/assets/mystiik-mobile.mp4" controls muted loop width="50%" height="100%" />
+          </div>
+        </SwiperSlide>
+      </Swiper>
     </section>
   );
 };

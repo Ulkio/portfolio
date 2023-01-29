@@ -7,12 +7,12 @@ const Contact = () => {
   return (
     <section id="contact" className="border-t-4 border-yellow-palette bg-blue-palette-background h-screen">
       {isAboveMediumScreens ? (
-        <div className="h-full px-24 flex flex-col justify-center ">
+        <div className="h-full px-24 flex flex-col justify-center gap-8 lg:gap-32">
           <p className="text-3xl lg:text-6xl text-yellow-palette text-center">CONTACT</p>
           <div>
             <div className="mt-16 flex flex-row ">
               <div className="w-1/2">
-              <form action="https://formspree.io/f/xknagzva" method="POST">
+                <form action="https://formspree.io/f/xknagzva" method="POST">
                   <div className="flex flex-col gap-16">
                     <input
                       className="bg-blue-palette-background border-b-4 border-yellow-palette focus:outline-none"
@@ -65,7 +65,7 @@ const Contact = () => {
           <div>
             <div className="mt-16">
               <div className="">
-              <form action="https://formspree.io/f/xknagzva" method="POST">
+                <form action="https://formspree.io/f/xknagzva" method="POST">
                   <div className="flex flex-col gap-16">
                     <input
                       className="bg-blue-palette-background border-b-4 border-yellow-palette focus:outline-none"
