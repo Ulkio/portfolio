@@ -10,7 +10,7 @@ module.exports = {
         "yellow-palette": "#FFD500",
       },
       backgroundImage: {
-        "space-bg": "linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url('/assets/spacebg.jpg');",
+        "space-bg": "linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url('/assets/spacebg.webp');",
       },
       fontFamily: {
         opensans: ["Open Sans", "sans-serif"],

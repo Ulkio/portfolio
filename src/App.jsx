@@ -7,6 +7,7 @@ import About from "@p/About";
 import Skills from "@p/Skills";
 import Projects from "@p/Projects";
 import Contact from "@p/Contact";
+import { Helmet } from "react-helmet";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("accueil");
@@ -38,6 +39,12 @@ function App() {
 
   return (
     <div className="app">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <meta name="description" content="Guillaume Verschave portfolio" />
+        <title>Guillaume Verschave</title>
+        <link rel="canonical" href="http://guillaumeverschave.onrender.com" />
+      </Helmet>
       <Navbar visiblePage={visiblePage} selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
       <div ref={accueil}>
         <Home />

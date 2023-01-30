@@ -1,6 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
-import { useMediaQuery } from "react-responsive";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y, Lazy } from "swiper";
 import "swiper/css";
