@@ -25,7 +25,7 @@ const Projects = () => {
         loop
         lazy
         navigation
-        pagination={{ clickable: true }}
+        pagination={{ clickable: true, }}
         className="py-12 ">
         {videos.map((video, index) => (
           <SwiperSlide key={index}>
@@ -36,6 +36,12 @@ const Projects = () => {
             </div>
           </SwiperSlide>
         ))}
+        <SwiperSlide>
+          <p className="text-center py-2 text-2xl">Générateur de lettres de motivation</p>
+          <div className="w-full lg:h-[600px] flex flex-col lg:flex-row justify-center items-center gap-8">
+            <ReactPlayer url={`assets/covers-desktop.mp4`} controls muted loop width="100%" height="100%" />
+          </div>
+        </SwiperSlide>
       </Swiper>
     </section>
   );

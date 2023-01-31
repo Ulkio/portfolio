@@ -13,4 +13,5 @@ body,
   background-color: black;
   @apply text-white;
   @apply font-roboto;
+  --swiper-pagination-bullet-inactive-color: rgb(255, 255, 255);
 }
