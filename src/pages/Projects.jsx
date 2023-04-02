@@ -17,7 +17,7 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projets" className="border-t-4 border-yellow-palette bg-blue-palette-background h-screen lg:px-24">
+    <section id="projets" className="border-t-4 border-yellow-palette bg-blue-palette-background h-full lg:px-24 pb-8">
       <p className="text-3xl lg:text-6xl text-yellow-palette text-center pt-24">PROJETS</p>
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y, Lazy]}
@@ -25,7 +25,7 @@ const Projects = () => {
         loop
         lazy
         navigation
-        pagination={{ clickable: true, }}
+        pagination={{ clickable: true }}
         className="py-12 ">
         {videos.map((video, index) => (
           <SwiperSlide key={index}>

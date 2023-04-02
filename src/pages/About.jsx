@@ -14,7 +14,7 @@ const About = () => {
 
   return (
     <section id="présentation" className="border-t-4 border-yellow-palette bg-blue-palette-background h-screen ">
-      <div className="h-full px-8 lg:px-24 flex flex-col lg:flex-row justify-between ">
+      <div className="h-full px-8 lg:px-24 flex flex-col lg:flex-row justify-center lg:justify-between">
         <div className="h-screen flex flex-col justify-center gap-8 lg:gap-24  basis-1/3">
           <p className="text-3xl lg:text-6xl text-yellow-palette font-semibold">Bonjour !</p>
           <p className="text-lg">
