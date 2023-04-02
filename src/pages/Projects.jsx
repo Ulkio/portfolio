@@ -11,9 +11,9 @@ import ReactPlayer from "react-player";
 
 const Projects = () => {
   const videos = [
+    { title: "Mystiik Tattoos", path: "mystiik" },
     { title: "High Valyrian Glyphs", path: "hv" },
     { title: "Space X Flights", path: "spacex" },
-    { title: "Mystiik Tattoos", path: "mystiik" },
   ];
 
   return (
