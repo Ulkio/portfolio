@@ -37,7 +37,7 @@ const Projects = () => {
           </SwiperSlide>
         ))}
         <SwiperSlide>
-          <p className="text-center py-2 text-2xl">Générateur de lettres de motivation</p>
+          <p className="text-center py-2 text-2xl">Générateur de lettres de motivation avec chatGPT</p>
           <div className="w-full lg:h-[600px] flex flex-col lg:flex-row justify-center items-center gap-8">
             <ReactPlayer url={`assets/covers-desktop.mp4`} controls muted loop width="100%" height="100%" />
           </div>
