@@ -24,16 +24,15 @@ const Home = () => {
         <p className="text-center text-xl lg:text-3xl font-bold">Développeur Web Fullstack</p>
         <div className="flex flex-row items-center">
           <a
-            href="https://drive.google.com/file/d/1wqRW9R3-naxNIO-8MgH_CuGjlzGeQrsV/view?usp=share_link"
+            href="https://drive.google.com/file/d/1fmJPRNpC06j2Np92tLL67DYZz9CR8H56/view?usp=share_link"
             target="_blank"
             className="text-center text-xl lg:text-1xl font-bold underline">
             Télécharger mon CV
           </a>
           <img
             onClick={() =>
-              window.open("https://drive.google.com/file/d/1wqRW9R3-naxNIO-8MgH_CuGjlzGeQrsV/view?usp=share_link")
+              window.open("https://drive.google.com/file/d/1fmJPRNpC06j2Np92tLL67DYZz9CR8H56/view?usp=share_link")
             }
-            href="https://drive.google.com/file/d/1wqRW9R3-naxNIO-8MgH_CuGjlzGeQrsV/view?usp=share_link"
             className="pl-2 invert h-6 hover:cursor-pointer"
             src="assets/download.png"
           />
