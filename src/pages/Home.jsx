@@ -6,11 +6,9 @@ const Home = () => {
   const isAboveMediumScreens = useMediaQuery({ query: `(min-width:1024px)` });
 
   return (
-    <section id="accueil" className="pt-16 h-screen bg-space-bg bg-cover ">
+    <section id="accueil" className="pt-32 pb-32 h-full bg-space-bg bg-cover ">
       <div className="flex h-full flex-col items-center justify-center gap-8">
-        <div className="border-8 border-yellow-palette w-64 h-64 lg:h-96 lg:w-96 rounded-full">
-          <img className="rounded-full" src="assets/me.jpg" />
-        </div>
+        <img className=" border-8 border-yellow-palette rounded-full w-80 max-w-lg object-fill" src="assets/me.jpg" />
         <p className="text-center text-yellow-palette text-3xl lg:text-6xl font-bold">GUILLAUME VERSCHAVE</p>
         <div className="flex flex-row gap-24">
           <a href="https://github.com/Ulkio">

@@ -5,9 +5,9 @@ const Contact = () => {
   const isAboveMediumScreens = useMediaQuery({ query: `(min-width:1024px)` });
 
   return (
-    <section id="contact" className="border-t-4 border-yellow-palette bg-blue-palette-background h-screen">
+    <section id="contact" className="border-t-2 border-yellow-palette bg-blue-palette-background h-full pt-32 pb-32">
       {isAboveMediumScreens ? (
-        <div className="h-full px-24 flex flex-col justify-center gap-8 lg:gap-32">
+        <div className="h-full px-24 flex flex-col justify-center gap-8 lg:gap-16">
           <p className="text-3xl lg:text-6xl text-yellow-palette text-center">CONTACT</p>
           <div>
             <div className="mt-16 flex flex-row ">

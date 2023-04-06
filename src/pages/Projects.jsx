@@ -11,13 +11,31 @@ import ReactPlayer from "react-player";
 
 const Projects = () => {
   const videos = [
-    { title: "Mystiik Tattoos", path: "mystiik" },
-    { title: "High Valyrian Glyphs", path: "hv" },
-    { title: "Space X Flights", path: "spacex" },
+    { title: "Mystiik Tattoos", path: "mystiik", noMobile: false, desc: "Site vitrine pour artiste tatoueuse" },
+    {
+      title: "High Valyrian Glyphs",
+      path: "hv",
+      noMobile: false,
+
+      desc: "Projet personnel présentant un alphabet de glyphes créé par un linguiste pour une série TV",
+    },
+    {
+      title: "Space X Flights",
+      path: "spacex",
+      noMobile: false,
+
+      desc: "Projet personnel de site vitrine pour acheter un ticket pour l'espace",
+    },
+    {
+      title: "Générateur de lettres de motivation avec chatGPT",
+      path: "covers",
+      noMobile: true,
+      desc: "Projet personnel pour tester l'API de OpenAI et chatGPT",
+    },
   ];
 
   return (
-    <section id="projets" className="border-t-4 border-yellow-palette bg-blue-palette-background h-full lg:px-24 pb-8">
+    <section id="projets" className="border-t-2 border-yellow-palette bg-blue-palette-background h-full lg:px-24 pb-32">
       <p className="text-3xl lg:text-6xl text-yellow-palette text-center pt-24">PROJETS</p>
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y, Lazy]}
@@ -30,18 +48,21 @@ const Projects = () => {
         {videos.map((video, index) => (
           <SwiperSlide key={index}>
             <p className="text-center py-2 text-2xl">{video.title}</p>
+            <p className="text-center py-2 text-md">{video.desc}</p>
             <div className="w-full lg:h-[600px] flex flex-col lg:flex-row justify-center items-center gap-8">
               <ReactPlayer url={`assets/${video.path}-desktop.mp4`} controls muted loop width="100%" height="100%" />
-              <ReactPlayer url={`assets/${video.path}-mobile.mp4`} controls muted loop width="50%" height="100%" />
+              {video.noMobile === false && (
+                <ReactPlayer url={`assets/${video.path}-mobile.mp4`} controls muted loop width="50%" height="100%" />
+              )}
             </div>
           </SwiperSlide>
         ))}
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <p className="text-center py-2 text-2xl">Générateur de lettres de motivation avec chatGPT</p>
           <div className="w-full lg:h-[600px] flex flex-col lg:flex-row justify-center items-center gap-8">
             <ReactPlayer url={`assets/covers-desktop.mp4`} controls muted loop width="100%" height="100%" />
           </div>
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swiper>
     </section>
   );

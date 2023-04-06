@@ -13,9 +13,11 @@ const About = () => {
   };
 
   return (
-    <section id="présentation" className="border-t-4 border-yellow-palette bg-blue-palette-background h-screen ">
+    <section
+      id="présentation"
+      className="border-t-2 border-yellow-palette bg-blue-palette-background h-full pt-32 pb-32">
       <div className="h-full px-8 lg:px-24 flex flex-col lg:flex-row justify-center lg:justify-between">
-        <div className="h-screen flex flex-col justify-center gap-8 lg:gap-24  basis-1/3">
+        <div className="h-screen flex flex-col justify-center gap-8   basis-1/3">
           <p className="text-3xl lg:text-6xl text-yellow-palette font-semibold">Bonjour !</p>
           <p className="text-lg">
             Je suis un développeur web passionné et en constante évolution. Actuellement, j'apprends les technologies
@@ -43,9 +45,9 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="h-screen flex flex-col justify-center basis-1/3">
-          <div className="flex flex-row flex-wrap justify-center gap-8">
-            <div className="bg-blue-palette-navbar h-16 w-16 lg:h-32 lg:w-32 flex flex-col items-center justify-evenly">
+        <div className="h-screen flex flex-col justify-center basis-1/3 ">
+          <div className="flex flex-row flex-wrap justify-center gap-2">
+            <div className="bg-blue-palette-navbar  h-16 w-16 lg lg:h-32 lg:w-32 flex flex-col items-center justify-evenly">
               {isAboveMediumScreens && <img className="invert" src="assets/fusee-96.png" />}
               <p className="font-semibold text-xs">ESPACE</p>
             </div>

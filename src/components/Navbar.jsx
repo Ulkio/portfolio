@@ -23,7 +23,7 @@ const Navbar = ({ visiblePage, selectedPage, setSelectedPage }) => {
       <div className="font-opensans font-semibold h-16 flex flex-row justify-between px-8 items-center">
         {isAboveMediumScreens ? (
           <>
-            <h1 className=" text-3xl">GUILLAUME VERSCHAVE</h1>
+            <h1 className="text-lg md:text-xl lg:text-3xl">GUILLAUME VERSCHAVE</h1>
             <div className="flex flex-row gap-8">
               <Link
                 visiblePage={visiblePage}
