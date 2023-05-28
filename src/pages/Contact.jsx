@@ -55,7 +55,7 @@ const Contact = () => {
               </div>
               <div className="basis-1/2 ">
                 <GoogleMapReact
-                  bootstrapURLKeys={{ key: "AIzaSyAyUDrUSVRlsaqgFV-fNIOST38WWOs1Uv8" }}
+                  bootstrapURLKeys={{ key: import.meta.env.VITE_GOOGLE_API_KEY }}
                   defaultCenter={defaultProps.center}
                   defaultZoom={defaultProps.zoom}>
                   <AnyReactComponent lat={59.955413} lng={30.337844} text="My Marker" />
