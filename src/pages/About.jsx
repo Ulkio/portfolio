@@ -1,79 +1,184 @@
-import React, { useState } from "react";
-import { Tooltip } from "react-tooltip";
+import React from "react";
 import "react-tooltip/dist/react-tooltip.css";
 import { useMediaQuery } from "react-responsive";
 
 const About = () => {
-  const [isEmailCopied, setIsEmailCopied] = useState(false);
-  const isAboveMediumScreens = useMediaQuery({ query: `(min-width:1024px)` });
-
-  const handleCopyClick = () => {
-    setIsEmailCopied(!isEmailCopied);
-    navigator.clipboard.writeText("guillaume.verschave@gmail.com");
-  };
+  const isAboveMediumScreens = useMediaQuery({ query: `(min-width:1200px)` });
 
   return (
     <section
-      id="présentation"
-      className="border-t-2 border-yellow-palette bg-blue-palette-background h-full pt-32 pb-32">
-      <div className="h-full px-8 lg:px-24 flex flex-col lg:flex-row justify-center lg:justify-between">
-        <div className="h-screen flex flex-col justify-center gap-8   basis-1/3">
-          <p className="text-3xl lg:text-6xl text-yellow-palette font-semibold">Bonjour !</p>
-          <p className="text-lg">
-            Je suis un développeur web passionné et en constante évolution. Actuellement, j'apprends les technologies
-            suivantes : React, Express, Node et MongoDB, l'ensemble connu sous le nom de stack MERN. Je suis impatient
-            de mettre mes compétences en pratique et de relever de nouveaux défis professionnels. Si vous recherchez un
-            développeur web déterminé, n'hésitez pas à me contacter !
-          </p>
-          <div>
-            <p className="inline text-lg uppercase">
-              <span className="text-yellow-palette">Email : </span>guillaume.verschave@gmail.com
-            </p>
-            {isAboveMediumScreens && (
-              <>
+      id="technologies"
+      className="border-t-2 border-yellow-palette bg-blue-palette-background h-full py-16 md:py-24">
+      {isAboveMediumScreens ? (
+        <div className="flex flex-col items-center gap-16">
+          <p className="text-3xl lg:text-6xl text-yellow-palette text-center">TECHNOLOGIES</p>
+          <div className="grid grid-rows-2 grid-cols-2 gap-x-48 gap-y-16 ">
+            <div className="w-[600px] h-[300px] py-4 bg-blue-palette-navbar flex flex-col gap-8 items-center justify-evenly">
+              <p className="text-center text-3xl">Base</p>
+              <p className="text-center">Technologies utilisées dans tous les projets</p>
+              <div className="flex gap-8">
                 <img
-                  onClick={handleCopyClick}
-                  id="copy"
-                  className="inline invert pl-2 h-4 hover:cursor-pointer"
-                  src="assets/copy.png"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
+                  className="w-20"
                 />
-                <Tooltip anchorId="copy" place="right" content={`${isEmailCopied ? `Copié !` : `Copier l'email`}`} />
-              </>
-            )}
-            <p className="text-lg uppercase">
-              <span className="text-yellow-palette">Téléphone : </span>06.47.26.36.09
-            </p>
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                  className="w-20"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
+                  className="w-20"
+                />
+              </div>
+            </div>
+            <div className="w-[600px] h-[300px] py-4 bg-blue-palette-navbar flex flex-col gap-8 items-center justify-evenly">
+              <p className="text-center text-3xl">Frontend</p>
+              <p className="text-center">Technologies utilisées pour la partie frontend des applications</p>
+              <div className="flex gap-8">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
+                  className="w-20"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+                  className="w-20"
+                />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-line.svg" className="w-20" />
+              </div>
+            </div>
+            <div className="w-[600px] h-[300px] py-4 bg-blue-palette-navbar flex flex-col gap-8 items-center justify-evenly">
+              <p className="text-center text-3xl">Backend</p>
+              <p className="text-center">Technologies utilisées pour la partie backend des applications</p>
+              <div className="flex gap-8">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg"
+                  className="w-20"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg"
+                  className="w-20"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg"
+                  className="w-20"
+                />
+              </div>
+            </div>
+            <div className="w-[600px] h-[300px] px-8 py-4 bg-blue-palette-navbar flex flex-col gap-8 items-center justify-evenly">
+              <p className="text-center text-3xl">Outils et bases de données</p>
+              <p className="text-center">
+                Outils utilisés pour m'aider dans le développement d'applications, et les bases de données avec
+                lesquelles je travaille
+              </p>
+              <div className="flex gap-8">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg"
+                  className="w-20"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                  className="w-20"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg"
+                  className="w-20"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg"
+                  className="w-20"
+                />
+              </div>
+            </div>
           </div>
         </div>
-        <div className="h-screen flex flex-col justify-center basis-1/3 ">
-          <div className="flex flex-row flex-wrap justify-center gap-2">
-            <div className="bg-blue-palette-navbar  h-16 w-16 lg lg:h-32 lg:w-32 flex flex-col items-center justify-evenly">
-              {isAboveMediumScreens && <img className="invert" src="assets/fusee-96.png" />}
-              <p className="font-semibold text-xs">ESPACE</p>
-            </div>
-            <div className="bg-blue-palette-navbar  h-16 w-16 lg:h-32 lg:w-32 flex flex-col items-center justify-evenly">
-              {isAboveMediumScreens && <img className="invert" src="assets/manette-96.png" />}
-              <p className="font-semibold text-xs">GAMING</p>
-            </div>
-            <div className="bg-blue-palette-navbar  h-16 w-16 lg:h-32 lg:w-32 flex flex-col items-center justify-evenly">
-              {isAboveMediumScreens && <img className="invert" src="assets/hiragana-ma-96.png" />}
-              <p className="font-semibold text-xs">MANGAS</p>
-            </div>
-            <div className="bg-blue-palette-navbar  h-16 w-16 lg:h-32 lg:w-32 flex flex-col items-center justify-evenly">
-              {isAboveMediumScreens && <img className="invert" src="assets/microscope-96.png" />}
-              <p className="font-semibold text-xs">SCIENCE</p>
-            </div>
-            <div className="bg-blue-palette-navbar  h-16 w-16 lg:h-32 lg:w-32 flex flex-col items-center justify-evenly">
-              {isAboveMediumScreens && <img className="invert" src="assets/tv-96.png" />}
-              <p className="font-semibold text-xs">SÉRIES</p>
-            </div>
-            <div className="bg-blue-palette-navbar  h-16 w-16 lg:h-32 lg:w-32 flex flex-col items-center justify-evenly">
-              {isAboveMediumScreens && <img className="invert" src="assets/tech-96.png" />}
-              <p className="font-semibold text-xs">TECH</p>
+      ) : (
+        <>
+          <div className="flex flex-col items-center gap-8">
+            <p className="text-3xl lg:text-6xl text-yellow-palette text-center">TECHNOLOGIES</p>
+            <div className="flex flex-col gap-6 ">
+              <div className=" py-4 bg-blue-palette-navbar flex flex-col gap-8 items-center justify-evenly">
+                <p className="text-center text-3xl">Base</p>
+                <p className="text-center">Technologies utilisées dans tous les projets</p>
+                <div className="flex gap-8">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
+                    className="w-8"
+                  />
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                    className="w-8"
+                  />
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
+                    className="w-8"
+                  />
+                </div>
+              </div>
+              <div className=" py-4 bg-blue-palette-navbar flex flex-col gap-8 items-center justify-evenly">
+                <p className="text-center text-3xl">Frontend</p>
+                <p className="text-center">Technologies utilisées pour la partie frontend des applications</p>
+                <div className="flex gap-8">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
+                    className="w-8"
+                  />
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+                    className="w-8"
+                  />
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-line.svg"
+                    className="w-8"
+                  />
+                </div>
+              </div>
+              <div className=" py-4 bg-blue-palette-navbar flex flex-col gap-8 items-center justify-evenly">
+                <p className="text-center text-3xl">Backend</p>
+                <p className="text-center">Technologies utilisées pour la partie backend des applications</p>
+                <div className="flex gap-8">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg"
+                    className="w-8"
+                  />
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg"
+                    className="w-8"
+                  />
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg"
+                    className="w-8"
+                  />
+                </div>
+              </div>
+              <div className=" px-8 py-4 bg-blue-palette-navbar flex flex-col gap-8 items-center justify-evenly">
+                <p className="text-center text-3xl">Outils et bases de données</p>
+                <p className="text-center">
+                  Outils utilisés pour m'aider dans le développement d'applications, et les bases de données avec
+                  lesquelles je travaille
+                </p>
+                <div className="flex flex-wrap gap-8">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg"
+                    className="w-12"
+                  />
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                    className="w-12"
+                  />
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg"
+                    className="w-12"
+                  />
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg"
+                    className="w-12"
+                  />
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
+        </>
+      )}
     </section>
   );
 };

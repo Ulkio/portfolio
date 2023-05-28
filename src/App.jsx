@@ -16,7 +16,7 @@ function App() {
   const { ref: accueil, inView: inView1 } = useInView({
     threshold: 0.5,
   });
-  const { ref: presentation, inView: inView2 } = useInView({
+  const { ref: technologies, inView: inView2 } = useInView({
     threshold: 0.5,
   });
   const { ref: competences, inView: inView3 } = useInView({
@@ -31,7 +31,7 @@ function App() {
 
   useEffect(() => {
     if (inView1) setVisiblePage("accueil");
-    if (inView2) setVisiblePage("présentation");
+    if (inView2) setVisiblePage("technologies");
     if (inView3) setVisiblePage("compétences");
     if (inView4) setVisiblePage("projets");
     if (inView5) setVisiblePage("contact");
@@ -49,11 +49,8 @@ function App() {
       <div ref={accueil}>
         <Home />
       </div>
-      <div ref={presentation}>
+      <div ref={technologies}>
         <About />
-      </div>
-      <div ref={competences}>
-        <Skills />
       </div>
       <div ref={projets}>
         <Projects />

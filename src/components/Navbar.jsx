@@ -19,8 +19,8 @@ const Navbar = ({ visiblePage, selectedPage, setSelectedPage }) => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
 
   return (
-    <nav className=" z-40 w-screen fixed top-0 bg-blue-palette-navbar lg:px-16">
-      <div className="font-opensans font-semibold h-16 flex flex-row justify-between px-8 items-center">
+    <nav className=" z-40 w-screen fixed top-0 bg-transparent">
+      <div className="font-opensans font-semibold h-16 flex flex-row justify-between items-center px-8 md:px-40">
         {isAboveMediumScreens ? (
           <>
             <h1 className="text-lg md:text-xl lg:text-3xl">GUILLAUME VERSCHAVE</h1>
@@ -33,16 +33,16 @@ const Navbar = ({ visiblePage, selectedPage, setSelectedPage }) => {
               />
               <Link
                 visiblePage={visiblePage}
-                page="Présentation"
+                page="Technologies"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />
-              <Link
+              {/* <Link
                 visiblePage={visiblePage}
                 page="Compétences"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
-              />
+              /> */}
               <Link
                 visiblePage={visiblePage}
                 page="Projets"
@@ -66,7 +66,7 @@ const Navbar = ({ visiblePage, selectedPage, setSelectedPage }) => {
         )}
         {!isAboveMediumScreens && (
           <div
-            className={`fixed right-0 bottom-0 h-full bg-blue-palette-navbar w-[300px] ease-in-out duration-100 ${
+            className={`fixed right-0 bottom-0 h-full bg-blue-palette-navbar w-[500px] ease-in-out duration-500 ${
               isMenuToggled ? "translate-x-0 " : "translate-x-full "
             }`}>
             {/* Close icon */}
@@ -80,10 +80,11 @@ const Navbar = ({ visiblePage, selectedPage, setSelectedPage }) => {
             </div>
 
             {/* Menu items */}
-            <div className="flex flex-col gap-10 ml-[33%] text-2xl text-deep-blue">
+            <div
+              className="flex flex-col gap-10 ml-[33%] text-2xl text-deep-blue"
+              onClick={() => setIsMenuToggled(!isMenuToggled)}>
               <Link page="Accueil" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
-              <Link page="Présentation" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
-              <Link page="Compétences" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
+              <Link page="Technologies" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
               <Link page="Projets" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
               <Link page="Contact" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
             </div>
