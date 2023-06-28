@@ -82,8 +82,7 @@ const Home = () => {
                 Je suis Guillaume.
               </p>
               <p className="text-xl lg:text-2xl text-center">
-                Développeur web fullstack en constante quête d'évolution. J'aime travailler avec les technologies
-                modernes.
+                Développeur web React et Node en constante quête d'évolution. Je suis prêt à relever de nouveaux défis pour contribuer à votre succès !
               </p>
               <div className="flex flex-row items-center">
                 <a
