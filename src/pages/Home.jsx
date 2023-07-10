@@ -41,8 +41,8 @@ const Home = () => {
             </div>
           </div>
           <div className="h-screen flex flex-col justify-center basis-1/2">
-            <div className="flex flex-row flex-wrap gap-8 justify-evenly">
-              <div className=" h-16 w-16 lg lg:h-24 lg:w-24 flex flex-col items-center justify-evenly hover:-translate-y-2 transition duration-300">
+            <div className="flex flex-row flex-wrap gap-6 justify-evenly">
+              <div className="h-16 w-16 lg lg:h-24 lg:w-24 flex flex-col items-center justify-evenly hover:-translate-y-2 transition duration-300">
                 {isAboveMediumScreens && <img className="invert" src="assets/fusee-96.png" />}
                 <p className="font-semibold text-xs">ESPACE</p>
               </div>
@@ -70,7 +70,7 @@ const Home = () => {
           </div>
         </div>
       ) : (
-        <div className="flex flex-col h-screen  items-center gap-8 pt-8 ">
+        <div className="flex flex-col h-screen py-8 justify-center items-center gap-8">
           <div className="flex flex-col items-center gap-6">
             <img
               className=" border-2 border-yellow-palette rounded-full w-32 h-32 max-w-lg object-fill"
@@ -82,7 +82,8 @@ const Home = () => {
                 Je suis Guillaume.
               </p>
               <p className="text-xl lg:text-2xl text-center">
-                Développeur web React et Node en constante quête d'évolution. Je suis prêt à relever de nouveaux défis pour contribuer à votre succès !
+                Développeur web React et Node en constante quête d'évolution. Je suis prêt à relever de nouveaux défis
+                pour contribuer à votre succès !
               </p>
               <div className="flex flex-row items-center">
                 <a
@@ -101,31 +102,26 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="flex justify-center ">
-            <div className="flex flex-wrap gap-6 justify-evenly">
+          <p className="italic">Mes passions</p>
+          <div className="flex justify-center flex-wrap ">
+            <div className="flex flex-wrap gap-4 justify-evenly">
               <div className="flex flex-col items-center justify-evenly hover:-translate-y-2 transition duration-300">
-                {isAboveMediumScreens && <img className="invert" src="assets/fusee-96.png" />}
-                <p className="font-semibold text-xs">ESPACE</p>
+                <img className="invert h-8 " src="assets/fusee-96.png" />
               </div>
               <div className="flex flex-col items-center justify-evenly hover:-translate-y-2 transition duration-300">
-                {isAboveMediumScreens && <img className="invert" src="assets/manette-96.png" />}
-                <p className="font-semibold text-xs">GAMING</p>
+                <img className="invert h-8 " src="assets/manette-96.png" />
               </div>
               <div className="flex flex-col items-center justify-evenly hover:-translate-y-2 transition duration-300">
-                {isAboveMediumScreens && <img className="invert" src="assets/hiragana-ma-96.png" />}
-                <p className="font-semibold text-xs">MANGAS</p>
+                <img className="invert h-8 " src="assets/hiragana-ma-96.png" />
               </div>
               <div className="flex flex-col items-center justify-evenly hover:-translate-y-2 transition duration-300">
-                {isAboveMediumScreens && <img className="invert" src="assets/microscope-96.png" />}
-                <p className="font-semibold text-xs">SCIENCE</p>
+                <img className="invert h-8 " src="assets/microscope-96.png" />
               </div>
               <div className="flex flex-col items-center justify-evenly hover:-translate-y-2 transition duration-300">
-                {isAboveMediumScreens && <img className="invert" src="assets/tv-96.png" />}
-                <p className="font-semibold text-xs">SÉRIES</p>
+                <img className="invert h-8 " src="assets/tv-96.png" />
               </div>
               <div className="flex flex-col items-center justify-evenly hover:-translate-y-2 transition duration-300">
-                {isAboveMediumScreens && <img className="invert" src="assets/tech-96.png" />}
-                <p className="font-semibold text-xs">TECH</p>
+                <img className="invert h-8 " src="assets/tech-96.png" />
               </div>
             </div>
           </div>

@@ -36,7 +36,7 @@ const Projects = () => {
 
   return (
     <section id="projets" className="border-t-2 border-yellow-palette bg-blue-palette-background h-full py-16 md:py-24">
-      <p className="text-3xl lg:text-6xl text-yellow-palette text-center ">PROJETS</p>
+      <p className="text-3xl lg:text-6xl text-yellow-palette text-center">PROJETS</p>
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y, Lazy]}
         slidesPerView={1}
@@ -44,12 +44,12 @@ const Projects = () => {
         lazy
         navigation
         pagination={{ clickable: true }}
-        className="py-12 ">
+        className="py-12">
         {videos.map((video, index) => (
-          <SwiperSlide key={index}>
+          <SwiperSlide key={index} className="">
             <p className="text-center py-2 text-2xl">{video.title}</p>
             <p className="text-center py-2 text-md">{video.desc}</p>
-            <div className="w-full lg:h-[600px] flex flex-col lg:flex-row justify-center items-center gap-8">
+            <div className="w-full lg:h-[600px] flex flex-col lg:flex-row justify-center items-center gap-8 ">
               <ReactPlayer url={`assets/${video.path}-desktop.mp4`} controls muted loop width="100%" height="100%" />
               {video.noMobile === false && (
                 <ReactPlayer url={`assets/${video.path}-mobile.mp4`} controls muted loop width="50%" height="100%" />

@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="flex items-center justify-center gap-8 h-16 w-full bg-blue-palette-navbar ">
+    <footer className="flex px-4 items-center justify-center gap-8 h-16 w-full bg-blue-palette-navbar ">
       <p>© 2023 Guillaume Verschave</p>
       <div className="flex flex-row gap-8 justify-center">
         <a href="https://github.com/Ulkio">
