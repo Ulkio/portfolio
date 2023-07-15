@@ -107,21 +107,27 @@ const Home = () => {
             <div className="flex flex-wrap gap-4 justify-evenly">
               <div className="flex flex-col items-center justify-evenly hover:-translate-y-2 transition duration-300">
                 <img className="invert h-8 " src="assets/fusee-96.png" />
+                <p className="font-semibold text-[0.5rem]">ESPACE</p>
               </div>
               <div className="flex flex-col items-center justify-evenly hover:-translate-y-2 transition duration-300">
                 <img className="invert h-8 " src="assets/manette-96.png" />
+                <p className="font-semibold text-[0.5rem]">GAMING</p>
               </div>
               <div className="flex flex-col items-center justify-evenly hover:-translate-y-2 transition duration-300">
                 <img className="invert h-8 " src="assets/hiragana-ma-96.png" />
+                <p className="font-semibold text-[0.5rem]">MANGAS</p>
               </div>
               <div className="flex flex-col items-center justify-evenly hover:-translate-y-2 transition duration-300">
                 <img className="invert h-8 " src="assets/microscope-96.png" />
+                <p className="font-semibold text-[0.5rem]">SCIENCE</p>
               </div>
               <div className="flex flex-col items-center justify-evenly hover:-translate-y-2 transition duration-300">
                 <img className="invert h-8 " src="assets/tv-96.png" />
+                <p className="font-semibold text-[0.5rem]">SÉRIES</p>
               </div>
               <div className="flex flex-col items-center justify-evenly hover:-translate-y-2 transition duration-300">
                 <img className="invert h-8 " src="assets/tech-96.png" />
+                <p className="font-semibold text-[0.5rem]">TECH</p>
               </div>
             </div>
           </div>
