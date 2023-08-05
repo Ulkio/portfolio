@@ -12,7 +12,7 @@ body,
   height: 100%;
   background-color: black;
   @apply text-white;
-  @apply font-roboto;
+  @apply font-inter;
   --swiper-pagination-bullet-inactive-color: rgb(255, 255, 255);
 }
 

@@ -12,8 +12,8 @@ const About = () => {
       {isAboveMediumScreens ? (
         <div className="flex flex-col items-center gap-16">
           <p className="text-3xl lg:text-6xl text-yellow-palette text-center">TECHNOLOGIES</p>
-          <div className="grid grid-rows-2 grid-cols-2 gap-x-48 gap-y-16 ">
-            <div className="w-[600px] h-[300px] py-4 bg-blue-palette-navbar flex flex-col gap-8 items-center justify-evenly">
+          <div className="grid xl:grid-cols-2 gap-24 ">
+            <div className="w-[500px] h-[300px] py-4 bg-blue-palette-navbar flex flex-col gap-8 items-center justify-evenly">
               <p className="text-center text-3xl">Base</p>
               <p className="text-center">Technologies utilisées dans tous les projets</p>
               <div className="flex gap-8">
@@ -31,7 +31,7 @@ const About = () => {
                 />
               </div>
             </div>
-            <div className="w-[600px] h-[300px] py-4 bg-blue-palette-navbar flex flex-col gap-8 items-center justify-evenly">
+            <div className="w-[500px] h-[300px] py-4 bg-blue-palette-navbar flex flex-col gap-8 items-center justify-evenly">
               <p className="text-center text-3xl">Frontend</p>
               <p className="text-center">Technologies utilisées pour la partie frontend des applications</p>
               <div className="flex gap-8">
@@ -46,7 +46,7 @@ const About = () => {
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-line.svg" className="w-20" />
               </div>
             </div>
-            <div className="w-[600px] h-[300px] py-4 bg-blue-palette-navbar flex flex-col gap-8 items-center justify-evenly">
+            <div className="w-[500px] h-[300px] py-4 bg-blue-palette-navbar flex flex-col gap-8 items-center justify-evenly">
               <p className="text-center text-3xl">Backend</p>
               <p className="text-center">Technologies utilisées pour la partie backend des applications</p>
               <div className="flex gap-8">
@@ -56,7 +56,7 @@ const About = () => {
                 />
                 <img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg"
-                  className="w-20"
+                  className="w-20 invert"
                 />
                 <img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg"
@@ -64,7 +64,7 @@ const About = () => {
                 />
               </div>
             </div>
-            <div className="w-[600px] h-[300px] px-8 py-4 bg-blue-palette-navbar flex flex-col gap-8 items-center justify-evenly">
+            <div className="w-[500px] h-[300px] px-8 py-4 bg-blue-palette-navbar flex flex-col gap-8 items-center justify-evenly">
               <p className="text-center text-3xl">Outils et bases de données</p>
               <p className="text-center">
                 Outils utilisés pour m'aider dans le développement d'applications, et les bases de données avec
@@ -96,67 +96,69 @@ const About = () => {
           <div className="flex flex-col items-center gap-8">
             <p className="text-3xl lg:text-6xl text-yellow-palette text-center">TECHNOLOGIES</p>
             <div className="flex flex-col gap-6 ">
-              <div className=" py-4 bg-blue-palette-navbar flex flex-col gap-8 items-center justify-evenly">
+              <div className="px-8  py-4 bg-blue-palette-navbar flex flex-col gap-8 items-center justify-evenly">
                 <p className="text-center text-3xl">Base</p>
                 <p className="text-center">Technologies utilisées dans tous les projets</p>
                 <div className="flex gap-8">
                   <img
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
-                    className="w-8"
+                    className="w-12"
                   />
                   <img
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                    className="w-8"
+                    className="w-12"
                   />
                   <img
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
-                    className="w-8"
+                    className="w-12"
                   />
                 </div>
               </div>
-              <div className=" py-4 bg-blue-palette-navbar flex flex-col gap-8 items-center justify-evenly">
+              <div className="px-8  py-4 bg-blue-palette-navbar flex flex-col gap-8 items-center justify-evenly">
                 <p className="text-center text-3xl">Frontend</p>
                 <p className="text-center">Technologies utilisées pour la partie frontend des applications</p>
                 <div className="flex gap-8">
                   <img
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
-                    className="w-8"
+                    className="w-12"
                   />
                   <img
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
-                    className="w-8"
+                    className="w-12"
                   />
                   <img
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-line.svg"
-                    className="w-8"
+                    className="w-12"
                   />
                 </div>
               </div>
-              <div className=" py-4 bg-blue-palette-navbar flex flex-col gap-8 items-center justify-evenly">
+              <div className="px-8  py-4 bg-blue-palette-navbar flex flex-col gap-8 items-center justify-evenly">
                 <p className="text-center text-3xl">Backend</p>
                 <p className="text-center">Technologies utilisées pour la partie backend des applications</p>
                 <div className="flex gap-8">
                   <img
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg"
-                    className="w-8"
+                    className="w-12"
                   />
+
                   <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg"
-                    className="w-8"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                    className="w-12 invert"
                   />
+
                   <img
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg"
-                    className="w-8"
+                    className="w-12"
                   />
                 </div>
               </div>
-              <div className=" px-8 py-4 bg-blue-palette-navbar flex flex-col gap-8 items-center justify-evenly">
+              <div className="px-8 py-4 bg-blue-palette-navbar flex flex-col gap-8 items-center justify-evenly">
                 <p className="text-center text-3xl">Outils et bases de données</p>
                 <p className="text-center">
                   Outils utilisés pour m'aider dans le développement d'applications, et les bases de données avec
                   lesquelles je travaille
                 </p>
-                <div className="flex flex-wrap gap-8">
+                <div className="flex flex-wrap justify-center gap-8">
                   <img
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg"
                     className="w-12"

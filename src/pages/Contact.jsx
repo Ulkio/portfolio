@@ -13,7 +13,9 @@ const Contact = () => {
     zoom: 13,
   };
   return (
-    <section id="contact" className="border-t-2 border-yellow-palette bg-blue-palette-background h-screen py-24">
+    <section
+      id="contact"
+      className="border-t-2 border-yellow-palette bg-blue-palette-background h-screen py-16 md:py-24">
       {isAboveMediumScreens ? (
         <div className="h-full px-24  flex flex-col justify-center gap-8 lg:gap-16">
           <p className="text-3xl lg:text-6xl text-yellow-palette text-center">CONTACT</p>

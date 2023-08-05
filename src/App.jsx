@@ -23,7 +23,7 @@ function App() {
     threshold: 0.5,
   });
   const { ref: projets, inView: inView4 } = useInView({
-    // threshold: 0.5,
+    threshold: 0.5,
   });
   const { ref: contact, inView: inView5 } = useInView({
     threshold: 0.5,
