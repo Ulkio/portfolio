@@ -42,6 +42,10 @@ function App() {
       <Helmet>
         <meta charSet="utf-8" />
         <meta name="description" content="Guillaume Verschave portfolio" />
+        <meta
+          name="google-site-verification"
+          content="google-site-verification=Gn8CjQZ0nvdHgld7J8UEnyevyK8O7i-5EVG9GIUVpYg"
+        />
         <title>Guillaume Verschave</title>
         <link rel="canonical" href="http://guillaumeverschave.onrender.com" />
       </Helmet>
