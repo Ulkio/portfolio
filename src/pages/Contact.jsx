@@ -60,7 +60,7 @@ const Contact = () => {
                   bootstrapURLKeys={{ key: import.meta.env.VITE_GOOGLE_API_KEY }}
                   defaultCenter={defaultProps.center}
                   defaultZoom={defaultProps.zoom}>
-                  <AnyReactComponent lat={59.955413} lng={30.337844} text="My Marker" />
+                  <AnyReactComponent lat={45.8784264} lng={1.0272048} text="My Location" />
                 </GoogleMapReact>
               </div>
             </div>
