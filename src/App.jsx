@@ -41,7 +41,6 @@ function App() {
     <div className="app">
       <Helmet>
         <meta charSet="utf-8" />
-        <meta name="description" content="Guillaume Verschave portfolio" />
         <title>Guillaume Verschave</title>
         <link rel="canonical" href="http://guillaumeverschave.onrender.com" />
       </Helmet>
