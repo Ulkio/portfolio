@@ -7,8 +7,8 @@ const Contact = () => {
   const isAboveMediumScreens = useMediaQuery({ query: `(min-width:1024px)` });
   const defaultProps = {
     center: {
-      lat: 50.5690532,
-      lng: 2.9428741,
+      lat: 45.8764084,
+      lng: 1.0122048,
     },
     zoom: 13,
   };
@@ -25,21 +25,21 @@ const Contact = () => {
                 <form action="https://formspree.io/f/xknagzva" method="POST">
                   <div className="flex flex-col gap-16">
                     <input
-                      className="bg-blue-palette-background border-b-4 border-yellow-palette focus:outline-none"
+                      className="bg-blue-palette-background border-b-2 border-yellow-palette focus:outline-none"
                       type="text"
                       name="name"
                       id="name"
                       placeholder="Votre nom..."
                     />
                     <input
-                      className="bg-blue-palette-background border-b-4 border-yellow-palette focus:outline-none"
+                      className="bg-blue-palette-background border-b-2 border-yellow-palette focus:outline-none"
                       type="text"
                       name="email"
                       id="email"
                       placeholder="Votre email..."
                     />
                     <textarea
-                      className="bg-blue-palette-background border-b-4 border-yellow-palette focus:outline-none resize-none"
+                      className="bg-blue-palette-background border-b-2 border-yellow-palette focus:outline-none resize-none"
                       name="message"
                       id="message"
                       cols="20"
@@ -48,7 +48,7 @@ const Contact = () => {
                     />
                   </div>
                   <button
-                    className="mt-16 text-left font-semibold border-4 border-yellow-palette text-yellow-palette px-8 py-2
+                    className="mt-16 text-left font-semibold border-2 border-yellow-palette text-yellow-palette px-8 py-2
                 hover:scale-105 transition duration-100"
                     type="submit">
                     ENVOYER
@@ -60,7 +60,7 @@ const Contact = () => {
                   bootstrapURLKeys={{ key: import.meta.env.VITE_GOOGLE_API_KEY }}
                   defaultCenter={defaultProps.center}
                   defaultZoom={defaultProps.zoom}>
-                  <AnyReactComponent lat={45.8784264} lng={1.0272048} text="My Location" />
+                  <AnyReactComponent lat={45.8784264} lng={1.0272048} />
                 </GoogleMapReact>
               </div>
             </div>

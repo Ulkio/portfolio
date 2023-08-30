@@ -9,7 +9,7 @@ const Home = () => {
     <section id="accueil" className="h-full bg-space-bg bg-cover">
       {isAboveMediumScreens ? (
         <div className="flex h-screen items-center gap-16">
-          <div className="flex basis-1/2 gap-6">
+          <div className="flex basis-1/2 gap-2 items-center">
             <img
               className=" border-2 border-yellow-palette rounded-full h-64 w-64 max-w-lg object-fill"
               src="assets/me.jpg"
@@ -17,7 +17,7 @@ const Home = () => {
             <div className="flex flex-col gap-6">
               <p className="text-3xl lg:text-4xl font-bold">
                 Bonjour ! <br />
-                Je suis Guillaume.
+                Je suis Guillaume Verschave
               </p>
               <p className="text-xl lg:text-2xl ">
                 Développeur web fullstack en constante quête d'évolution. J'aime travailler avec les technologies
@@ -25,7 +25,7 @@ const Home = () => {
               </p>
               <div className="flex flex-row items-center">
                 <a
-                  href="https://drive.google.com/file/d/1fmJPRNpC06j2Np92tLL67DYZz9CR8H56/view?usp=share_link"
+                  href="https://drive.google.com/file/d/1Ff9uLatWLnBKjztEAs_VZb9pz0EVshUO/view?usp=sharing"
                   target="_blank"
                   className="text-center text-xl lg:text-1xl font-bold underline">
                   Télécharger mon CV
@@ -79,11 +79,11 @@ const Home = () => {
             <div className="flex flex-col items-center gap-6">
               <p className="text-3xl lg:text-4xl font-bold text-center">
                 Bonjour ! <br />
-                Je suis Guillaume.
+                Je suis Guillaume Verschave
               </p>
               <p className="text-xl lg:text-2xl text-center">
-                Développeur web React et Node en constante quête d'évolution. Je suis prêt à relever de nouveaux défis
-                pour contribuer à votre succès !
+                Développeur web fullstack en constante quête d'évolution. J'aime travailler avec les technologies
+                modernes.
               </p>
               <div className="flex flex-row items-center">
                 <a
@@ -138,7 +138,7 @@ const Home = () => {
         <div className="flex justify-center -translate-y-24">
           <AnchorLink href={`#technologies`}>
             <img
-              className="transform invert h-16 hover:cursor-pointer hover:scale-110 transition duration-200"
+              className="transform invert h-16 hover:cursor-pointer hover:scale-110 transition duration-200 animate-[bounce_2s_linear_infinite]"
               src="assets/down-arrow.png"
             />
           </AnchorLink>
