@@ -1,17 +1,9 @@
 import React from "react";
 import { useMediaQuery } from "react-responsive";
-import GoogleMapReact from "google-map-react";
 
 const Contact = () => {
-  const AnyReactComponent = ({ text }) => <div>{text}</div>;
   const isAboveMediumScreens = useMediaQuery({ query: `(min-width:1024px)` });
-  const defaultProps = {
-    center: {
-      lat: 45.8764084,
-      lng: 1.0122048,
-    },
-    zoom: 13,
-  };
+
   return (
     <section
       id="contact"
@@ -56,12 +48,18 @@ const Contact = () => {
                 </form>
               </div>
               <div className="basis-1/2 ">
-                <GoogleMapReact
-                  bootstrapURLKeys={{ key: import.meta.env.VITE_GOOGLE_API_KEY }}
-                  defaultCenter={defaultProps.center}
-                  defaultZoom={defaultProps.zoom}>
-                  <AnyReactComponent lat={45.8784264} lng={1.0272048} />
-                </GoogleMapReact>
+                <iframe
+                  width="520"
+                  height="400"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                  id="gmap_canvas"
+                  src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=4%20SAINT%20VICTURNIEN+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                <script
+                  type="text/javascript"
+                  src="https://embedmaps.com/google-maps-authorization/script.js?id=ffb283a7bde2bed10a9934b0c790af012e5186bf"></script>
               </div>
             </div>
           </div>
