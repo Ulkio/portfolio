@@ -40,7 +40,7 @@ const About = () => {
                   className="w-20"
                 />
                 <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+                  src="https://img.icons8.com/color/48/tailwind_css.png"
                   className="w-20"
                 />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-line.svg" className="w-20" />
