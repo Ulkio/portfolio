@@ -40,10 +40,10 @@ const About = () => {
                   className="w-20"
                 />
                 <img
-                  src="https://img.icons8.com/color/48/tailwind_css.png"
+                  src="https://img.icons8.com/color/96/tailwind_css.png"
                   className="w-20"
                 />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-line.svg" className="w-20" />
+                <img src="https://img.icons8.com/color/96/nextjs.png" className="w-20" />
               </div>
             </div>
             <div className="w-[500px] h-[300px] py-4 bg-blue-palette-navbar flex flex-col gap-8 items-center justify-evenly border border-yellow-palette">
