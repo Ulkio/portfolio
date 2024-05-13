@@ -25,7 +25,7 @@ const Home = () => {
               </p>
               <div className="flex flex-row items-center">
                 <a
-                  href="https://drive.google.com/file/d/1Ff9uLatWLnBKjztEAs_VZb9pz0EVshUO/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1bOuhVr6c-2QlbCQn6lEs-4giKxmT3rWn/view?usp=sharing"
                   target="_blank"
                   className="text-center text-xl lg:text-1xl font-bold underline">
                   Télécharger mon CV
