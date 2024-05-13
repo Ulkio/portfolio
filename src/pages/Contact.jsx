@@ -56,7 +56,7 @@ const Contact = () => {
                   marginheight="0"
                   marginwidth="0"
                   id="gmap_canvas"
-                  src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=4%20SAINT%20VICTURNIEN+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                  src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=4%20SAINT%20VICTURNIEN+()&amp;t=&amp;z=10&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
                 <script
                   type="text/javascript"
                   src="https://embedmaps.com/google-maps-authorization/script.js?id=ffb283a7bde2bed10a9934b0c790af012e5186bf"></script>
