@@ -54,21 +54,7 @@ const Projects = () => {
         navigation
         pagination={{ clickable: true }}
         className="py-12">
-        <SwiperSlide>
-          <div className="flex flex-col items-center">
-            <a
-              href="http://www.wavenbuilder.online"
-              target="blank"
-              className="text-center py-2 text-2xl hover:scale-105 duration-200 w-fit ">
-              Waven Builder
-            </a>
-            <p className="text-center py-2 text-md">Créez votre build sur le jeu vidéo WAVEN</p>
-          </div>
-          <div className="w-full lg:h-[600px] flex flex-col lg:flex-row justify-center items-center gap-8">
-            <img src="assets/waven-desktop.png" alt="" className="w-[1200px] object-scale-down " />
-            <img src="assets/waven-mobile.png" alt="" className="w-[250px]" />
-          </div>
-        </SwiperSlide>
+        
         {videos.map((video, index) => (
           <SwiperSlide key={index} className="">
             <div className="flex flex-col items-center">
@@ -90,6 +76,21 @@ const Projects = () => {
             </div>
           </SwiperSlide>
         ))}
+        <SwiperSlide>
+          <div className="flex flex-col items-center">
+            <a
+              href="http://www.wavenbuilder.online"
+              target="blank"
+              className="text-center py-2 text-2xl hover:scale-105 duration-200 w-fit ">
+              Waven Builder
+            </a>
+            <p className="text-center py-2 text-md">Créez votre build sur le jeu vidéo WAVEN</p>
+          </div>
+          <div className="w-full lg:h-[600px] flex flex-col lg:flex-row justify-center items-center gap-8">
+            <img src="assets/waven-desktop.png" alt="" className="w-[1200px] object-scale-down " />
+            <img src="assets/waven-mobile.png" alt="" className="w-[250px]" />
+          </div>
+        </SwiperSlide>
         {/* <SwiperSlide>
           <p className="text-center py-2 text-2xl">Générateur de lettres de motivation avec chatGPT</p>
           <div className="w-full lg:h-[600px] flex flex-col lg:flex-row justify-center items-center gap-8">
