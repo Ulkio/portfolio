@@ -8,8 +8,8 @@ const Home = () => {
   return (
     <section id="accueil" className="h-full bg-space-bg bg-cover">
       {isAboveMediumScreens ? (
-        <div className="flex h-screen items-center gap-16">
-          <div className="flex basis-1/2 gap-2 items-center">
+        <div className="flex h-screen items-center gap-4">
+          <div className="flex basis-1/2 gap-6 items-center">
             <img
               className=" border-2 border-yellow-palette rounded-full h-64 w-64 max-w-lg object-fill"
               src="assets/me.jpg"
@@ -21,7 +21,7 @@ const Home = () => {
               </p>
               <p className="text-xl lg:text-2xl ">
                 Développeur web fullstack en constante quête d'évolution. J'aime travailler avec les technologies
-                modernes.
+                modernes. Actuellement à la recherche d'une alternance sur le secteur de Limoges.
               </p>
               <div className="flex flex-row items-center">
                 <a

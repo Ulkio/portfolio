@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="flex px-4 items-center justify-center gap-8 h-16 w-full bg-blue-palette-navbar ">
-      <p>© 2023 Guillaume Verschave</p>
+      <p>© 2024 Guillaume Verschave</p>
       <div className="flex flex-row gap-8 justify-center">
         <a href="https://github.com/Ulkio">
           <img className="invert h-8 object-scale-down" src="assets/github-96.png" alt="github" />
