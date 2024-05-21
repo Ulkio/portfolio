@@ -8,12 +8,12 @@ const About = () => {
   return (
     <section
       id="technologies"
-      className="border-t-2 border-yellow-palette bg-blue-palette-background h-full py-16 md:py-24">
+      className=" bg-blue-palette-background h-full py-16 xl:py-24">
       {isAboveMediumScreens ? (
         <div className="flex flex-col items-center gap-16">
-          <p className="text-3xl lg:text-6xl text-yellow-palette text-center">TECHNOLOGIES</p>
-          <div className="grid xl:grid-cols-2 gap-24 ">
-            <div className="w-[500px] h-[300px] py-4 bg-blue-palette-navbar flex flex-col gap-8 items-center justify-evenly border border-yellow-palette rounded-xl shadow-md shadow-yellow-palette hover:scale-[102%] hover:cursor-pointer transition duration-200">
+          <p className="text-3xl lg:text-6xl text-yellow-palette ">TECHNOLOGIES</p>
+          <div className="grid xl:grid-cols-2 gap-12 ">
+            <div className="w-[500px] h-[300px] py-4 bg-blue-palette-navbar flex flex-col gap-8 items-center justify-evenly  rounded-xl shadow-md  hover:scale-[102%] hover:cursor-pointer transition duration-200">
               <p className="text-center text-3xl">Base</p>
               <p className="text-center">Technologies utilisées dans tous les projets</p>
               <div className="flex gap-8">
@@ -31,7 +31,7 @@ const About = () => {
                 />
               </div>
             </div>
-            <div className="w-[500px] h-[300px] py-4 bg-blue-palette-navbar flex flex-col gap-8 items-center justify-evenly border border-yellow-palette rounded-xl shadow-md shadow-yellow-palette hover:scale-[102%] hover:cursor-pointer transition duration-200">
+            <div className="w-[500px] h-[300px] py-4 bg-blue-palette-navbar flex flex-col gap-8 items-center justify-evenly  rounded-xl shadow-xl  hover:scale-[102%] hover:cursor-pointer transition duration-200">
               <p className="text-center text-3xl">Frontend</p>
               <p className="text-center">Technologies utilisées pour la partie frontend des applications</p>
               <div className="flex gap-8">
@@ -46,7 +46,7 @@ const About = () => {
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" className="w-20" />
               </div>
             </div>
-            <div className="w-[500px] h-[300px] py-4 bg-blue-palette-navbar flex flex-col gap-8 items-center justify-evenly border border-yellow-palette rounded-xl shadow-md shadow-yellow-palette hover:scale-[102%] hover:cursor-pointer transition duration-200">
+            <div className="w-[500px] h-[300px] py-4 bg-blue-palette-navbar flex flex-col gap-8 items-center justify-evenly  rounded-xl shadow-xl  hover:scale-[102%] hover:cursor-pointer transition duration-200">
               <p className="text-center text-3xl">Backend</p>
               <p className="text-center">Technologies utilisées pour la partie backend des applications</p>
               <div className="flex gap-8">
@@ -64,7 +64,7 @@ const About = () => {
                 />
               </div>
             </div>
-            <div className="w-[500px] h-[300px] py-4 bg-blue-palette-navbar flex flex-col gap-8 items-center justify-evenly border border-yellow-palette rounded-xl shadow-md shadow-yellow-palette hover:scale-[102%] hover:cursor-pointer transition duration-200">
+            <div className="w-[500px] h-[300px] py-4 bg-blue-palette-navbar flex flex-col gap-8 items-center justify-evenly  rounded-xl shadow-xl  hover:scale-[102%] hover:cursor-pointer transition duration-200">
               <p className="text-center text-3xl">Outils et bases de données</p>
               <p className="text-center">
                 Outils utilisés pour m'aider dans le développement d'applications, et les bases de données avec

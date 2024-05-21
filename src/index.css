@@ -17,22 +17,22 @@ body,
 }
 
 @media (max-width: 600px) {
-  section {
+  section,nav {
     padding-left: 2rem;
     padding-right: 2rem;
   }
 }
 
 @media (min-width: 601px) and (max-width: 900px) {
-  section {
+  section,nav {
     padding-left: 6rem;
     padding-right: 6rem;
   }
 }
 
 @media (min-width: 901px) {
-  section {
-    padding-left: 10rem;
-    padding-right: 10rem;
+  section,nav {
+    padding-left: 20rem;
+    padding-right: 20rem;
   }
 }

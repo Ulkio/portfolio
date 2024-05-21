@@ -44,7 +44,7 @@ const Projects = () => {
   return (
     <section
       id="projets"
-      className="border-t-2 border-yellow-palette bg-blue-palette-background h-full  py-16 md:py-24">
+      className=" bg-blue-palette-background h-full  py-16 md:py-24">
       <p className="text-3xl lg:text-6xl text-yellow-palette text-center">PROJETS</p>
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y, Lazy]}

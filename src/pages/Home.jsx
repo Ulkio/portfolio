@@ -9,9 +9,9 @@ const Home = () => {
     <section id="accueil" className="h-full bg-space-bg bg-cover">
       {isAboveMediumScreens ? (
         <div className="flex h-screen items-center gap-4">
-          <div className="flex basis-1/2 gap-6 items-center">
+          <div className="flex basis-2/3 gap-6 items-center">
             <img
-              className=" border-2 border-yellow-palette rounded-full h-64 w-64 max-w-lg object-fill"
+              className=" border-2  rounded-full h-64 w-64 max-w-lg object-fill"
               src="assets/me.jpg"
             />
             <div className="flex flex-col gap-6">
@@ -40,7 +40,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="h-screen flex flex-col justify-center basis-1/2">
+          <div className="h-screen flex flex-col justify-center basis-1/3">
             <div className="flex flex-row flex-wrap gap-6 justify-evenly">
               <div className="h-16 w-16 lg lg:h-24 lg:w-24 flex flex-col items-center justify-evenly hover:-translate-y-2 transition duration-300">
                 {isAboveMediumScreens && <img className="invert" src="assets/fusee-96.png" />}
@@ -73,7 +73,7 @@ const Home = () => {
         <div className="flex flex-col h-screen py-8 justify-center items-center gap-8">
           <div className="flex flex-col items-center gap-6">
             <img
-              className=" border-2 border-yellow-palette rounded-full w-32 h-32 max-w-lg object-fill"
+              className=" border-2  rounded-full w-32 h-32 max-w-lg object-fill"
               src="assets/me.jpg"
             />
             <div className="flex flex-col items-center gap-6">

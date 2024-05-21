@@ -7,31 +7,31 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="border-t-2 border-yellow-palette bg-blue-palette-background h-screen py-16 md:py-24">
+      className=" bg-blue-palette-background h-screen py-16 md:py-24">
       {isAboveMediumScreens ? (
-        <div className="h-full px-24  flex flex-col justify-center gap-8 lg:gap-16">
+        <div className="h-full px-24  flex flex-col justify-center gap-8 lg:gap-16 ">
           <p className="text-3xl lg:text-6xl text-yellow-palette text-center">CONTACT</p>
           <div>
-            <div className="mt-16 flex flex-row gap-16 ">
-              <div className="basis-1/2">
+            <div className="mt-16 flex flex-row gap-12 ">
+              <div className="basis-1/2 bg-blue-palette-navbar rounded-xl p-6">
                 <form action="https://formspree.io/f/xknagzva" method="POST">
-                  <div className="flex flex-col gap-16">
+                  <div className="flex flex-col gap-16 ">
                     <input
-                      className="bg-blue-palette-background border-b-2 border-yellow-palette focus:outline-none"
+                      className="bg-blue-palette-navbar p-2 border-b-2  border-yellow-palette focus:outline-none"
                       type="text"
                       name="name"
                       id="name"
                       placeholder="Votre nom..."
                     />
                     <input
-                      className="bg-blue-palette-background border-b-2 border-yellow-palette focus:outline-none"
+                      className="bg-blue-palette-navbar p-2 border-b-2 border-yellow-palette focus:outline-none"
                       type="text"
                       name="email"
                       id="email"
                       placeholder="Votre email..."
                     />
                     <textarea
-                      className="bg-blue-palette-background border-b-2 border-yellow-palette focus:outline-none resize-none"
+                      className="bg-blue-palette-navbar p-2 border-b-2 border-yellow-palette focus:outline-none resize-none"
                       name="message"
                       id="message"
                       cols="20"
@@ -40,7 +40,7 @@ const Contact = () => {
                     />
                   </div>
                   <button
-                    className="mt-16 text-left font-semibold border-2 border-yellow-palette text-yellow-palette px-8 py-2
+                    className="mt-16 text-left font-semibold border-2 rounded-xl border-yellow-palette text-yellow-palette px-8 py-2
                 hover:scale-105 transition duration-100"
                     type="submit">
                     ENVOYER

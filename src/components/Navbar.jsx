@@ -20,7 +20,7 @@ const Navbar = ({ visiblePage, selectedPage, setSelectedPage }) => {
 
   return (
     <nav className=" z-40 w-screen fixed top-0 bg-transparent">
-      <div className="font-opensans font-semibold h-16 flex flex-row justify-between items-center px-8 md:px-40">
+      <div className="font-opensans font-semibold h-16 flex flex-row justify-between items-center">
         {isAboveMediumScreens ? (
           <>
             <h1 className="text-lg md:text-xl lg:text-3xl">GUILLAUME VERSCHAVE</h1>
@@ -70,7 +70,7 @@ const Navbar = ({ visiblePage, selectedPage, setSelectedPage }) => {
               isMenuToggled ? "translate-x-0 " : "translate-x-full "
             }`}>
             {/* Close icon */}
-            <div className="flex justify-end px-8 py-4">
+            <div className="flex justify-end  py-4">
               <button
                 onClick={() => {
                   setIsMenuToggled(!isMenuToggled);
