@@ -11,7 +11,7 @@ const Home = () => {
         <div className="flex h-screen items-center gap-4">
           <div className="flex basis-2/3 gap-6 items-center">
             <img
-              className=" border-2  rounded-full h-64 w-64 max-w-lg object-fill"
+              className=" ring-2 ring-yellow-palette rounded-full h-64 w-64 max-w-lg object-fill"
               src="assets/me.jpg"
             />
             <div className="flex flex-col gap-6">
