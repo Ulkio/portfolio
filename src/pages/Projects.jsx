@@ -10,7 +10,7 @@ import "swiper/css/effect-fade";
 import ReactPlayer from "react-player";
 
 const Projects = () => {
-  const videos = [
+  const projectData = [
     {
       title: "Mystiik Tattoos",
       link: "https://mystiik-tattoo.netlify.app/",
@@ -23,14 +23,12 @@ const Projects = () => {
       link: "https://highvalyrianglyphs.onrender.com/",
       path: "hv",
       noMobile: false,
-
       desc: "Projet personnel présentant un alphabet de glyphes créé par un linguiste pour une série TV",
     },
     {
       title: "Space X Flights",
       path: "spacex",
       noMobile: false,
-
       desc: "Projet personnel de site vitrine pour acheter un ticket pour l'espace",
     },
     {
@@ -39,13 +37,18 @@ const Projects = () => {
       noMobile: true,
       desc: "Projet personnel pour tester l'API de OpenAI et chatGPT",
     },
+    {
+      title: "Waven Builder",
+      link: "http://www.wavenbuilder.online",
+      desktopImage: "assets/waven-desktop.png",
+      mobileImage: "assets/waven-mobile.png",
+      desc: "Créez votre build sur le jeu vidéo WAVEN",
+    },
   ];
 
   return (
-    <section
-      id="projets"
-      className=" bg-blue-palette-background h-full  py-16 md:py-24">
-      <p className="text-3xl lg:text-6xl text-yellow-palette text-center">PROJETS</p>
+    <section id="projets" className="bg-blue-palette-background h-full py-16 md:py-24">
+      <h2 className="text-3xl lg:text-6xl text-yellow-palette text-center">PROJETS</h2>
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y, Lazy]}
         slidesPerView={1}
@@ -53,52 +56,45 @@ const Projects = () => {
         lazy
         navigation
         pagination={{ clickable: true }}
-        className="py-12">
-        
-        {videos.map((video, index) => (
-          <SwiperSlide key={index} className="">
-            <div className="flex flex-col items-center">
-              {video.link ? (
-                <a href={video.link} target="blank" className="text-center py-2 text-2xl  hover:scale-105 duration-200">
-                  {video.title}
-                </a>
-              ) : (
-                <p className="text-center py-2 text-2xl">{video.title}</p>
-              )}
-
-              <p className="text-center py-2 text-md">{video.desc}</p>
-            </div>
-            <div className="w-full lg:h-[600px] flex flex-col lg:flex-row justify-center items-center gap-8 ">
-              <ReactPlayer url={`assets/${video.path}-desktop.mp4`} controls muted loop width="100%" height="100%" />
-              {video.noMobile === false && (
-                <ReactPlayer url={`assets/${video.path}-mobile.mp4`} controls muted loop width="50%" height="100%" />
-              )}
-            </div>
+        className="py-12"
+      >
+        {projectData.map((project, index) => (
+          <SwiperSlide key={index}>
+            <ProjectSlide project={project} />
           </SwiperSlide>
         ))}
-        <SwiperSlide>
-          <div className="flex flex-col items-center">
-            <a
-              href="http://www.wavenbuilder.online"
-              target="blank"
-              className="text-center py-2 text-2xl hover:scale-105 duration-200 w-fit ">
-              Waven Builder
-            </a>
-            <p className="text-center py-2 text-md">Créez votre build sur le jeu vidéo WAVEN</p>
-          </div>
-          <div className="w-full lg:h-[600px] flex flex-col lg:flex-row justify-center items-center gap-8">
-            <img src="assets/waven-desktop.png" alt="" className="w-[1200px] object-scale-down " />
-            <img src="assets/waven-mobile.png" alt="" className="w-[250px]" />
-          </div>
-        </SwiperSlide>
-        {/* <SwiperSlide>
-          <p className="text-center py-2 text-2xl">Générateur de lettres de motivation avec chatGPT</p>
-          <div className="w-full lg:h-[600px] flex flex-col lg:flex-row justify-center items-center gap-8">
-            <ReactPlayer url={`assets/covers-desktop.mp4`} controls muted loop width="100%" height="100%" />
-          </div>
-        </SwiperSlide> */}
       </Swiper>
     </section>
+  );
+};
+
+const ProjectSlide = ({ project }) => {
+  const { title, link, path, noMobile, desc, desktopImage, mobileImage } = project;
+
+  return (
+    <>
+      <div className="flex flex-col items-center">
+        {link ? (
+          <a href={link} target="_blank" rel="noopener noreferrer" className="text-center py-2 text-2xl hover:scale-105 duration-200">
+            {title}
+          </a>
+        ) : (
+          <p className="text-center py-2 text-2xl">{title}</p>
+        )}
+        <p className="text-center py-2 text-md">{desc}</p>
+      </div>
+      <div className="w-full lg:h-[600px] flex flex-col lg:flex-row justify-center items-center gap-8">
+        {desktopImage ? (
+          <img src={desktopImage} alt={`${title} desktop`} className="w-[1000px] object-scale-down" />
+        ) : (
+          <ReactPlayer url={`assets/${path}-desktop.mp4`} controls muted loop width="100%" height="100%" />
+        )}
+        {mobileImage && <img src={mobileImage} alt={`${title} mobile`} className="w-[200px] object-scale-down" />}
+        {!mobileImage && noMobile === false && (
+          <ReactPlayer url={`assets/${path}-mobile.mp4`} controls muted loop width="50%" height="100%" />
+        )}
+      </div>
+    </>
   );
 };
 

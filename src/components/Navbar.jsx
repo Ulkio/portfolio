@@ -70,7 +70,7 @@ const Navbar = ({ visiblePage, selectedPage, setSelectedPage }) => {
               isMenuToggled ? "translate-x-0 " : "translate-x-full "
             }`}>
             {/* Close icon */}
-            <div className="flex justify-end  py-4">
+            <div className="flex justify-end px-8 py-4">
               <button
                 onClick={() => {
                   setIsMenuToggled(!isMenuToggled);
