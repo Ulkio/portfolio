@@ -4,6 +4,14 @@ import { useMediaQuery } from "react-responsive";
 
 const Home = () => {
   const isAboveMediumScreens = useMediaQuery({ query: `(min-width:1024px)` });
+  const interests = [
+    { src: 'assets/fusee-96.png', label: 'ASTRONOMIE' },
+    { src: 'assets/manette-96.png', label: 'GAMING' },
+    { src: 'assets/hiragana-ma-96.png', label: 'MANGAS' },
+    { src: 'assets/microscope-96.png', label: 'SCIENCE' },
+    { src: 'assets/tv-96.png', label: 'SÉRIES' },
+    { src: 'assets/tech-96.png', label: 'TECH' }
+  ]
 
   return (
     <section id="accueil" className="h-full bg-space-bg bg-cover">
@@ -42,30 +50,14 @@ const Home = () => {
           </div>
           <div className="h-screen flex flex-col justify-center basis-1/3">
             <div className="flex flex-row flex-wrap gap-6 justify-evenly">
-              <div className="h-16 w-16 lg lg:h-24 lg:w-24 flex flex-col items-center justify-evenly hover:-translate-y-2 transition duration-300">
-                {isAboveMediumScreens && <img className="invert" src="assets/fusee-96.png" />}
-                <p className="font-semibold text-xs">ESPACE</p>
-              </div>
-              <div className=" h-16 w-16 lg:h-24 lg:w-24 flex flex-col items-center justify-evenly hover:-translate-y-2 transition duration-300">
-                {isAboveMediumScreens && <img className="invert" src="assets/manette-96.png" />}
-                <p className="font-semibold text-xs">GAMING</p>
-              </div>
-              <div className=" h-16 w-16 lg:h-24 lg:w-24 flex flex-col items-center justify-evenly hover:-translate-y-2 transition duration-300">
-                {isAboveMediumScreens && <img className="invert" src="assets/hiragana-ma-96.png" />}
-                <p className="font-semibold text-xs">MANGAS</p>
-              </div>
-              <div className=" h-16 w-16 lg:h-24 lg:w-24 flex flex-col items-center justify-evenly hover:-translate-y-2 transition duration-300">
-                {isAboveMediumScreens && <img className="invert" src="assets/microscope-96.png" />}
-                <p className="font-semibold text-xs">SCIENCE</p>
-              </div>
-              <div className=" h-16 w-16 lg:h-24 lg:w-24 flex flex-col items-center justify-evenly hover:-translate-y-2 transition duration-300">
-                {isAboveMediumScreens && <img className="invert" src="assets/tv-96.png" />}
-                <p className="font-semibold text-xs">SÉRIES</p>
-              </div>
-              <div className=" h-16 w-16 lg:h-24 lg:w-24 flex flex-col items-center justify-evenly hover:-translate-y-2 transition duration-300">
-                {isAboveMediumScreens && <img className="invert" src="assets/tech-96.png" />}
-                <p className="font-semibold text-xs">TECH</p>
-              </div>
+              {interests.map((interest)=>{
+                return(
+                  <div className="h-16 w-16 lg lg:h-24 lg:w-24 flex flex-col items-center justify-evenly hover:-translate-y-2 transition duration-300">
+                  {isAboveMediumScreens && <img className="invert" src={interest.src} />}
+                  <p className="font-semibold text-xs">{interest.label}</p>
+                </div>
+                )
+              })}
             </div>
           </div>
         </div>
@@ -105,30 +97,14 @@ const Home = () => {
           <p className="italic">Mes passions</p>
           <div className="flex justify-center flex-wrap ">
             <div className="flex flex-wrap gap-4 justify-evenly">
-              <div className="flex flex-col items-center justify-evenly hover:-translate-y-2 transition duration-300">
-                <img className="invert h-8 " src="assets/fusee-96.png" />
-                <p className="font-semibold text-[0.5rem]">ESPACE</p>
-              </div>
-              <div className="flex flex-col items-center justify-evenly hover:-translate-y-2 transition duration-300">
-                <img className="invert h-8 " src="assets/manette-96.png" />
-                <p className="font-semibold text-[0.5rem]">GAMING</p>
-              </div>
-              <div className="flex flex-col items-center justify-evenly hover:-translate-y-2 transition duration-300">
-                <img className="invert h-8 " src="assets/hiragana-ma-96.png" />
-                <p className="font-semibold text-[0.5rem]">MANGAS</p>
-              </div>
-              <div className="flex flex-col items-center justify-evenly hover:-translate-y-2 transition duration-300">
-                <img className="invert h-8 " src="assets/microscope-96.png" />
-                <p className="font-semibold text-[0.5rem]">SCIENCE</p>
-              </div>
-              <div className="flex flex-col items-center justify-evenly hover:-translate-y-2 transition duration-300">
-                <img className="invert h-8 " src="assets/tv-96.png" />
-                <p className="font-semibold text-[0.5rem]">SÉRIES</p>
-              </div>
-              <div className="flex flex-col items-center justify-evenly hover:-translate-y-2 transition duration-300">
-                <img className="invert h-8 " src="assets/tech-96.png" />
-                <p className="font-semibold text-[0.5rem]">TECH</p>
-              </div>
+              {interests.map((interest)=>{
+                return(
+                  <div className="flex flex-col items-center justify-evenly hover:-translate-y-2 transition duration-300">
+                    <img className="invert h-8 " src={interest.src} />
+                    <p className="font-semibold text-[0.5rem]">{interest.label}</p>
+                </div>
+                )
+              })}
             </div>
           </div>
         </div>
