@@ -40,7 +40,7 @@ const Projects = () => {
     {
       title: "Waven Builder",
       link: "http://www.wavenbuilder.online",
-      desktopImage: "assets/waven-desktop.png",
+      path: "waven",
       mobileImage: "assets/waven-mobile.png",
       desc: "Créez votre build sur le jeu vidéo WAVEN",
     },
@@ -84,11 +84,7 @@ const ProjectSlide = ({ project }) => {
         <p className="text-center py-2 text-md">{desc}</p>
       </div>
       <div className="w-full lg:h-[600px] flex flex-col lg:flex-row justify-center items-center gap-8">
-        {desktopImage ? (
-          <img src={desktopImage} alt={`${title} desktop`} className="w-[1000px] object-scale-down" />
-        ) : (
-          <ReactPlayer url={`assets/${path}-desktop.mp4`} controls muted loop width="100%" height="100%" />
-        )}
+        <ReactPlayer url={`assets/${path}-desktop.mp4`} controls muted loop width="100%" height="100%" />
         {mobileImage && <img src={mobileImage} alt={`${title} mobile`} className="w-[200px] object-scale-down" />}
         {!mobileImage && noMobile === false && (
           <ReactPlayer url={`assets/${path}-mobile.mp4`} controls muted loop width="50%" height="100%" />
