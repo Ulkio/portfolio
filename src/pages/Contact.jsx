@@ -4,7 +4,7 @@ import { Suspense } from 'react'
 const Contact = () => {
     return (
         <section id='contact' className='bg-blue-palette-background min-h-screen py-16 md:py-24'>
-            <div className='container mx-auto px-4'>
+            <div className='mx-auto '>
                 <h2 className='text-3xl lg:text-6xl text-yellow-palette text-center mb-16'>
                     CONTACT
                 </h2>
