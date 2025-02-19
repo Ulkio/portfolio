@@ -27,8 +27,8 @@ const Home = () => {
                         </h1>
                         <p className='text-xl lg:text-2xl'>
                             Développeur web fullstack en constante quête d'évolution. J'aime
-                            travailler avec les technologies modernes. Actuellement à la recherche
-                            d'une alternance sur le secteur de Limoges.
+                            travailler avec les technologies modernes. N'hésitez pas à me contacter
+                            si vous souhaitez travailler avec moi !
                         </p>
                         <div className='flex flex-row items-center justify-center lg:justify-start'>
                             <a
